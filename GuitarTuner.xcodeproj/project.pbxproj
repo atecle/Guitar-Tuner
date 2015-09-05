@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		660609ED1B9094FB0034840E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660609E51B9094FB0034840E /* AVFoundation.framework */; };
+		660609EE1B9094FB0034840E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660609E61B9094FB0034840E /* Accelerate.framework */; };
+		660609EF1B9094FB0034840E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660609E71B9094FB0034840E /* QuartzCore.framework */; };
+		660609F01B9094FB0034840E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660609E81B9094FB0034840E /* OpenGLES.framework */; };
+		660609F11B9094FB0034840E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660609E91B9094FB0034840E /* AudioToolbox.framework */; };
+		660609F21B9094FB0034840E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660609EA1B9094FB0034840E /* CoreGraphics.framework */; };
+		660609F31B9094FB0034840E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660609EB1B9094FB0034840E /* UIKit.framework */; };
+		660609F41B9094FB0034840E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660609EC1B9094FB0034840E /* Foundation.framework */; };
+		6634DFF61B9A2BA5004306FA /* DS-DIGIT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6634DFF21B9A2BA5004306FA /* DS-DIGIT.TTF */; };
+		6634DFF81B9A2BA5004306FA /* DS-DIGIB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6634DFF41B9A2BA5004306FA /* DS-DIGIB.TTF */; };
+		6634DFF91B9A2BA5004306FA /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6634DFF51B9A2BA5004306FA /* DS-DIGI.TTF */; };
+		6634DFFA1B9A2DB6004306FA /* DS-DIGII.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6634DFF31B9A2BA5004306FA /* DS-DIGII.TTF */; };
+		66838EA91B826F3000DF1A4E /* A2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66838EA31B826F3000DF1A4E /* A2.mp3 */; };
+		66838EAA1B826F3000DF1A4E /* B3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66838EA41B826F3000DF1A4E /* B3.mp3 */; };
+		66838EAB1B826F3000DF1A4E /* D3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66838EA51B826F3000DF1A4E /* D3.mp3 */; };
+		66838EAC1B826F3000DF1A4E /* G3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66838EA61B826F3000DF1A4E /* G3.mp3 */; };
+		66838EAD1B826F3000DF1A4E /* E4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66838EA71B826F3000DF1A4E /* E4.mp3 */; };
+		66838EAE1B826F3000DF1A4E /* E2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66838EA81B826F3000DF1A4E /* E2.mp3 */; };
+		66AA250A1B7FDB8200E76FD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AA25091B7FDB8200E76FD9 /* main.m */; settings = {COMPILER_FLAGS = " "; }; };
+		66AA250D1B7FDB8200E76FD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AA250C1B7FDB8200E76FD9 /* AppDelegate.m */; };
+		66AA25131B7FDB8200E76FD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66AA25111B7FDB8200E76FD9 /* Main.storyboard */; };
+		66AA25181B7FDB8200E76FD9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66AA25161B7FDB8200E76FD9 /* LaunchScreen.xib */; };
+		66AA25241B7FDB8200E76FD9 /* GuitarTunerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AA25231B7FDB8200E76FD9 /* GuitarTunerTests.m */; };
+		66AA252F1B7FE18B00E76FD9 /* TECGuitarTuner.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AA252E1B7FE18B00E76FD9 /* TECGuitarTuner.m */; };
+		66ADBEEF1B937A6D00B4CE66 /* TECStringButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ADBEEE1B937A6D00B4CE66 /* TECStringButton.m */; };
+		66B51CB71B9ABC68005D9A65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B51CB61B9ABC68005D9A65 /* Images.xcassets */; };
+		66C3E7111B966E4900E662E5 /* TECViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E7101B966E4900E662E5 /* TECViewController.m */; };
+		66C3E7381B99420600E662E5 /* EZAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E7191B99420600E662E5 /* EZAudio.m */; };
+		66C3E7391B99420600E662E5 /* EZAudioDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E71B1B99420600E662E5 /* EZAudioDevice.m */; };
+		66C3E73A1B99420600E662E5 /* EZAudioDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E71D1B99420600E662E5 /* EZAudioDisplayLink.m */; };
+		66C3E73B1B99420600E662E5 /* EZAudioFFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E71F1B99420600E662E5 /* EZAudioFFT.m */; };
+		66C3E73C1B99420600E662E5 /* EZAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E7211B99420600E662E5 /* EZAudioFile.m */; };
+		66C3E73D1B99420600E662E5 /* EZAudioFloatConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E7231B99420600E662E5 /* EZAudioFloatConverter.m */; };
+		66C3E73E1B99420600E662E5 /* EZAudioFloatData.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E7251B99420600E662E5 /* EZAudioFloatData.m */; };
+		66C3E73F1B99420600E662E5 /* EZAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E7271B99420600E662E5 /* EZAudioPlayer.m */; };
+		66C3E7401B99420600E662E5 /* EZAudioPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E7291B99420600E662E5 /* EZAudioPlot.m */; };
+		66C3E7411B99420600E662E5 /* EZAudioPlotGL.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E72B1B99420600E662E5 /* EZAudioPlotGL.m */; };
+		66C3E7421B99420600E662E5 /* EZAudioUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E72D1B99420600E662E5 /* EZAudioUtilities.m */; };
+		66C3E7431B99420600E662E5 /* EZMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E72F1B99420600E662E5 /* EZMicrophone.m */; };
+		66C3E7441B99420600E662E5 /* EZOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E7311B99420600E662E5 /* EZOutput.m */; };
+		66C3E7451B99420600E662E5 /* EZPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E7331B99420600E662E5 /* EZPlot.m */; };
+		66C3E7461B99420600E662E5 /* EZRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E7351B99420600E662E5 /* EZRecorder.m */; };
+		66C3E7471B99420600E662E5 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 66C3E7361B99420600E662E5 /* TPCircularBuffer.c */; };
+		66F8B9091B8B73360040CC1B /* TECTuningManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8B9081B8B73360040CC1B /* TECTuningManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66AA251E1B7FDB8200E76FD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66AA24FC1B7FDB8200E76FD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66AA25031B7FDB8200E76FD9;
+			remoteInfo = GuitarTuner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		660609E51B9094FB0034840E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		660609E61B9094FB0034840E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		660609E71B9094FB0034840E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		660609E81B9094FB0034840E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		660609E91B9094FB0034840E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		660609EA1B9094FB0034840E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		660609EB1B9094FB0034840E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		660609EC1B9094FB0034840E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6634DFF21B9A2BA5004306FA /* DS-DIGIT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DS-DIGIT.TTF"; path = "../../../../Downloads/ds_digital/DS-DIGIT.TTF"; sourceTree = "<group>"; };
+		6634DFF31B9A2BA5004306FA /* DS-DIGII.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DS-DIGII.TTF"; path = "../../../../Downloads/ds_digital/DS-DIGII.TTF"; sourceTree = "<group>"; };
+		6634DFF41B9A2BA5004306FA /* DS-DIGIB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DS-DIGIB.TTF"; path = "../../../../Downloads/ds_digital/DS-DIGIB.TTF"; sourceTree = "<group>"; };
+		6634DFF51B9A2BA5004306FA /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DS-DIGI.TTF"; path = "../../../../Downloads/ds_digital/DS-DIGI.TTF"; sourceTree = "<group>"; };
+		66838EA31B826F3000DF1A4E /* A2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = A2.mp3; path = ../../../../Desktop/tuner/A2.mp3; sourceTree = "<group>"; };
+		66838EA41B826F3000DF1A4E /* B3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = B3.mp3; path = ../../../../Desktop/tuner/B3.mp3; sourceTree = "<group>"; };
+		66838EA51B826F3000DF1A4E /* D3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = D3.mp3; path = ../../../../Desktop/tuner/D3.mp3; sourceTree = "<group>"; };
+		66838EA61B826F3000DF1A4E /* G3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = G3.mp3; path = ../../../../Desktop/tuner/G3.mp3; sourceTree = "<group>"; };
+		66838EA71B826F3000DF1A4E /* E4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = E4.mp3; path = ../../../../Desktop/tuner/E4.mp3; sourceTree = "<group>"; };
+		66838EA81B826F3000DF1A4E /* E2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = E2.mp3; path = ../../../../Desktop/tuner/E2.mp3; sourceTree = "<group>"; };
+		66956DF71B86181F00573BAF /* TECTuningManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TECTuningManager.h; sourceTree = "<group>"; };
+		66AA25041B7FDB8200E76FD9 /* GuitarTuner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarTuner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66AA25081B7FDB8200E76FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66AA25091B7FDB8200E76FD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66AA250B1B7FDB8200E76FD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66AA250C1B7FDB8200E76FD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66AA250E1B7FDB8200E76FD9 /* TECViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TECViewController.h; sourceTree = "<group>"; };
+		66AA25121B7FDB8200E76FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66AA25171B7FDB8200E76FD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		66AA251D1B7FDB8200E76FD9 /* GuitarTunerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarTunerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66AA25221B7FDB8200E76FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66AA25231B7FDB8200E76FD9 /* GuitarTunerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuitarTunerTests.m; sourceTree = "<group>"; };
+		66AA252D1B7FE18B00E76FD9 /* TECGuitarTuner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TECGuitarTuner.h; sourceTree = "<group>"; };
+		66AA252E1B7FE18B00E76FD9 /* TECGuitarTuner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TECGuitarTuner.m; sourceTree = "<group>"; };
+		66ADBEED1B937A6D00B4CE66 /* TECStringButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TECStringButton.h; sourceTree = "<group>"; };
+		66ADBEEE1B937A6D00B4CE66 /* TECStringButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TECStringButton.m; sourceTree = "<group>"; };
+		66B51CB61B9ABC68005D9A65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		66C3E7101B966E4900E662E5 /* TECViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TECViewController.m; sourceTree = "<group>"; };
+		66C3E7181B99420600E662E5 /* EZAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZAudio.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudio.h"; sourceTree = "<group>"; };
+		66C3E7191B99420600E662E5 /* EZAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZAudio.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudio.m"; sourceTree = "<group>"; };
+		66C3E71A1B99420600E662E5 /* EZAudioDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZAudioDevice.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioDevice.h"; sourceTree = "<group>"; };
+		66C3E71B1B99420600E662E5 /* EZAudioDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZAudioDevice.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioDevice.m"; sourceTree = "<group>"; };
+		66C3E71C1B99420600E662E5 /* EZAudioDisplayLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZAudioDisplayLink.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioDisplayLink.h"; sourceTree = "<group>"; };
+		66C3E71D1B99420600E662E5 /* EZAudioDisplayLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZAudioDisplayLink.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioDisplayLink.m"; sourceTree = "<group>"; };
+		66C3E71E1B99420600E662E5 /* EZAudioFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZAudioFFT.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioFFT.h"; sourceTree = "<group>"; };
+		66C3E71F1B99420600E662E5 /* EZAudioFFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZAudioFFT.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioFFT.m"; sourceTree = "<group>"; };
+		66C3E7201B99420600E662E5 /* EZAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZAudioFile.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioFile.h"; sourceTree = "<group>"; };
+		66C3E7211B99420600E662E5 /* EZAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZAudioFile.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioFile.m"; sourceTree = "<group>"; };
+		66C3E7221B99420600E662E5 /* EZAudioFloatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatConverter.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioFloatConverter.h"; sourceTree = "<group>"; };
+		66C3E7231B99420600E662E5 /* EZAudioFloatConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZAudioFloatConverter.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioFloatConverter.m"; sourceTree = "<group>"; };
+		66C3E7241B99420600E662E5 /* EZAudioFloatData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatData.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioFloatData.h"; sourceTree = "<group>"; };
+		66C3E7251B99420600E662E5 /* EZAudioFloatData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZAudioFloatData.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioFloatData.m"; sourceTree = "<group>"; };
+		66C3E7261B99420600E662E5 /* EZAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZAudioPlayer.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioPlayer.h"; sourceTree = "<group>"; };
+		66C3E7271B99420600E662E5 /* EZAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZAudioPlayer.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioPlayer.m"; sourceTree = "<group>"; };
+		66C3E7281B99420600E662E5 /* EZAudioPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZAudioPlot.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioPlot.h"; sourceTree = "<group>"; };
+		66C3E7291B99420600E662E5 /* EZAudioPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZAudioPlot.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioPlot.m"; sourceTree = "<group>"; };
+		66C3E72A1B99420600E662E5 /* EZAudioPlotGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZAudioPlotGL.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioPlotGL.h"; sourceTree = "<group>"; };
+		66C3E72B1B99420600E662E5 /* EZAudioPlotGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZAudioPlotGL.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioPlotGL.m"; sourceTree = "<group>"; };
+		66C3E72C1B99420600E662E5 /* EZAudioUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZAudioUtilities.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioUtilities.h"; sourceTree = "<group>"; };
+		66C3E72D1B99420600E662E5 /* EZAudioUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZAudioUtilities.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZAudioUtilities.m"; sourceTree = "<group>"; };
+		66C3E72E1B99420600E662E5 /* EZMicrophone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZMicrophone.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZMicrophone.h"; sourceTree = "<group>"; };
+		66C3E72F1B99420600E662E5 /* EZMicrophone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZMicrophone.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZMicrophone.m"; sourceTree = "<group>"; };
+		66C3E7301B99420600E662E5 /* EZOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZOutput.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZOutput.h"; sourceTree = "<group>"; };
+		66C3E7311B99420600E662E5 /* EZOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZOutput.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZOutput.m"; sourceTree = "<group>"; };
+		66C3E7321B99420600E662E5 /* EZPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZPlot.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZPlot.h"; sourceTree = "<group>"; };
+		66C3E7331B99420600E662E5 /* EZPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZPlot.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZPlot.m"; sourceTree = "<group>"; };
+		66C3E7341B99420600E662E5 /* EZRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EZRecorder.h; path = "../../../../Developer/EZAudio-master/EZAudio/EZRecorder.h"; sourceTree = "<group>"; };
+		66C3E7351B99420600E662E5 /* EZRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EZRecorder.m; path = "../../../../Developer/EZAudio-master/EZAudio/EZRecorder.m"; sourceTree = "<group>"; };
+		66C3E7361B99420600E662E5 /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = TPCircularBuffer.c; path = "../../../../Developer/EZAudio-master/EZAudio/TPCircularBuffer.c"; sourceTree = "<group>"; };
+		66C3E7371B99420600E662E5 /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = "../../../../Developer/EZAudio-master/EZAudio/TPCircularBuffer.h"; sourceTree = "<group>"; };
+		66F8B9081B8B73360040CC1B /* TECTuningManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TECTuningManager.m; path = ../TECTuningManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66AA25011B7FDB8200E76FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660609F21B9094FB0034840E /* CoreGraphics.framework in Frameworks */,
+				660609ED1B9094FB0034840E /* AVFoundation.framework in Frameworks */,
+				660609EE1B9094FB0034840E /* Accelerate.framework in Frameworks */,
+				660609F11B9094FB0034840E /* AudioToolbox.framework in Frameworks */,
+				660609EF1B9094FB0034840E /* QuartzCore.framework in Frameworks */,
+				660609F31B9094FB0034840E /* UIKit.framework in Frameworks */,
+				660609F01B9094FB0034840E /* OpenGLES.framework in Frameworks */,
+				660609F41B9094FB0034840E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66AA251A1B7FDB8200E76FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		660609F51B9094FF0034840E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				660609E51B9094FB0034840E /* AVFoundation.framework */,
+				660609E61B9094FB0034840E /* Accelerate.framework */,
+				660609E71B9094FB0034840E /* QuartzCore.framework */,
+				660609E81B9094FB0034840E /* OpenGLES.framework */,
+				660609E91B9094FB0034840E /* AudioToolbox.framework */,
+				660609EA1B9094FB0034840E /* CoreGraphics.framework */,
+				660609EB1B9094FB0034840E /* UIKit.framework */,
+				660609EC1B9094FB0034840E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66838EA21B826F1400DF1A4E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				66838EA31B826F3000DF1A4E /* A2.mp3 */,
+				66838EA41B826F3000DF1A4E /* B3.mp3 */,
+				66838EA51B826F3000DF1A4E /* D3.mp3 */,
+				66838EA61B826F3000DF1A4E /* G3.mp3 */,
+				66838EA71B826F3000DF1A4E /* E4.mp3 */,
+				66838EA81B826F3000DF1A4E /* E2.mp3 */,
+			);
+			name = Sounds;
+			path = GuitarTuner;
+			sourceTree = "<group>";
+		};
+		66AA24FB1B7FDB8200E76FD9 = {
+			isa = PBXGroup;
+			children = (
+				66AA25061B7FDB8200E76FD9 /* GuitarTuner */,
+				66AA25051B7FDB8200E76FD9 /* Products */,
+				66838EA21B826F1400DF1A4E /* Sounds */,
+				660609F51B9094FF0034840E /* Frameworks */,
+				66AA25201B7FDB8200E76FD9 /* GuitarTunerTests */,
+			);
+			sourceTree = "<group>";
+		};
+		66AA25051B7FDB8200E76FD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66AA25041B7FDB8200E76FD9 /* GuitarTuner.app */,
+				66AA251D1B7FDB8200E76FD9 /* GuitarTunerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66AA25061B7FDB8200E76FD9 /* GuitarTuner */ = {
+			isa = PBXGroup;
+			children = (
+				66B51CB61B9ABC68005D9A65 /* Images.xcassets */,
+				66C3E7171B9941EA00E662E5 /* EZAudio */,
+				66ADBEF01B93863800B4CE66 /* View Controllers */,
+				66ADBEEC1B9379E000B4CE66 /* Views */,
+				66AA25301B7FE1A700E76FD9 /* Model */,
+				66AA25111B7FDB8200E76FD9 /* Main.storyboard */,
+				66AA25161B7FDB8200E76FD9 /* LaunchScreen.xib */,
+				66AA25071B7FDB8200E76FD9 /* Supporting Files */,
+			);
+			path = GuitarTuner;
+			sourceTree = "<group>";
+		};
+		66AA25071B7FDB8200E76FD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66AA250B1B7FDB8200E76FD9 /* AppDelegate.h */,
+				66AA250C1B7FDB8200E76FD9 /* AppDelegate.m */,
+				66AA25081B7FDB8200E76FD9 /* Info.plist */,
+				66AA25091B7FDB8200E76FD9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66AA25201B7FDB8200E76FD9 /* GuitarTunerTests */ = {
+			isa = PBXGroup;
+			children = (
+				66AA25231B7FDB8200E76FD9 /* GuitarTunerTests.m */,
+				66AA25211B7FDB8200E76FD9 /* Supporting Files */,
+			);
+			path = GuitarTunerTests;
+			sourceTree = "<group>";
+		};
+		66AA25211B7FDB8200E76FD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6634DFF21B9A2BA5004306FA /* DS-DIGIT.TTF */,
+				6634DFF31B9A2BA5004306FA /* DS-DIGII.TTF */,
+				6634DFF41B9A2BA5004306FA /* DS-DIGIB.TTF */,
+				6634DFF51B9A2BA5004306FA /* DS-DIGI.TTF */,
+				66AA25221B7FDB8200E76FD9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66AA25301B7FE1A700E76FD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66AA252D1B7FE18B00E76FD9 /* TECGuitarTuner.h */,
+				66AA252E1B7FE18B00E76FD9 /* TECGuitarTuner.m */,
+				66956DF71B86181F00573BAF /* TECTuningManager.h */,
+				66F8B9081B8B73360040CC1B /* TECTuningManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		66ADBEEC1B9379E000B4CE66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66ADBEED1B937A6D00B4CE66 /* TECStringButton.h */,
+				66ADBEEE1B937A6D00B4CE66 /* TECStringButton.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		66ADBEF01B93863800B4CE66 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				66AA250E1B7FDB8200E76FD9 /* TECViewController.h */,
+				66C3E7101B966E4900E662E5 /* TECViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		66C3E7171B9941EA00E662E5 /* EZAudio */ = {
+			isa = PBXGroup;
+			children = (
+				66C3E7181B99420600E662E5 /* EZAudio.h */,
+				66C3E7191B99420600E662E5 /* EZAudio.m */,
+				66C3E71A1B99420600E662E5 /* EZAudioDevice.h */,
+				66C3E71B1B99420600E662E5 /* EZAudioDevice.m */,
+				66C3E71C1B99420600E662E5 /* EZAudioDisplayLink.h */,
+				66C3E71D1B99420600E662E5 /* EZAudioDisplayLink.m */,
+				66C3E71E1B99420600E662E5 /* EZAudioFFT.h */,
+				66C3E71F1B99420600E662E5 /* EZAudioFFT.m */,
+				66C3E7201B99420600E662E5 /* EZAudioFile.h */,
+				66C3E7211B99420600E662E5 /* EZAudioFile.m */,
+				66C3E7221B99420600E662E5 /* EZAudioFloatConverter.h */,
+				66C3E7231B99420600E662E5 /* EZAudioFloatConverter.m */,
+				66C3E7241B99420600E662E5 /* EZAudioFloatData.h */,
+				66C3E7251B99420600E662E5 /* EZAudioFloatData.m */,
+				66C3E7261B99420600E662E5 /* EZAudioPlayer.h */,
+				66C3E7271B99420600E662E5 /* EZAudioPlayer.m */,
+				66C3E7281B99420600E662E5 /* EZAudioPlot.h */,
+				66C3E7291B99420600E662E5 /* EZAudioPlot.m */,
+				66C3E72A1B99420600E662E5 /* EZAudioPlotGL.h */,
+				66C3E72B1B99420600E662E5 /* EZAudioPlotGL.m */,
+				66C3E72C1B99420600E662E5 /* EZAudioUtilities.h */,
+				66C3E72D1B99420600E662E5 /* EZAudioUtilities.m */,
+				66C3E72E1B99420600E662E5 /* EZMicrophone.h */,
+				66C3E72F1B99420600E662E5 /* EZMicrophone.m */,
+				66C3E7301B99420600E662E5 /* EZOutput.h */,
+				66C3E7311B99420600E662E5 /* EZOutput.m */,
+				66C3E7321B99420600E662E5 /* EZPlot.h */,
+				66C3E7331B99420600E662E5 /* EZPlot.m */,
+				66C3E7341B99420600E662E5 /* EZRecorder.h */,
+				66C3E7351B99420600E662E5 /* EZRecorder.m */,
+				66C3E7361B99420600E662E5 /* TPCircularBuffer.c */,
+				66C3E7371B99420600E662E5 /* TPCircularBuffer.h */,
+			);
+			name = EZAudio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66AA25031B7FDB8200E76FD9 /* GuitarTuner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66AA25271B7FDB8200E76FD9 /* Build configuration list for PBXNativeTarget "GuitarTuner" */;
+			buildPhases = (
+				66AA25001B7FDB8200E76FD9 /* Sources */,
+				66AA25011B7FDB8200E76FD9 /* Frameworks */,
+				66AA25021B7FDB8200E76FD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuitarTuner;
+			productName = GuitarTuner;
+			productReference = 66AA25041B7FDB8200E76FD9 /* GuitarTuner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66AA251C1B7FDB8200E76FD9 /* GuitarTunerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66AA252A1B7FDB8200E76FD9 /* Build configuration list for PBXNativeTarget "GuitarTunerTests" */;
+			buildPhases = (
+				66AA25191B7FDB8200E76FD9 /* Sources */,
+				66AA251A1B7FDB8200E76FD9 /* Frameworks */,
+				66AA251B1B7FDB8200E76FD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66AA251F1B7FDB8200E76FD9 /* PBXTargetDependency */,
+			);
+			name = GuitarTunerTests;
+			productName = GuitarTunerTests;
+			productReference = 66AA251D1B7FDB8200E76FD9 /* GuitarTunerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66AA24FC1B7FDB8200E76FD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ClassroomA;
+				TargetAttributes = {
+					66AA25031B7FDB8200E76FD9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					66AA251C1B7FDB8200E76FD9 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 66AA25031B7FDB8200E76FD9;
+					};
+				};
+			};
+			buildConfigurationList = 66AA24FF1B7FDB8200E76FD9 /* Build configuration list for PBXProject "GuitarTuner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66AA24FB1B7FDB8200E76FD9;
+			productRefGroup = 66AA25051B7FDB8200E76FD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66AA25031B7FDB8200E76FD9 /* GuitarTuner */,
+				66AA251C1B7FDB8200E76FD9 /* GuitarTunerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66AA25021B7FDB8200E76FD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6634DFF61B9A2BA5004306FA /* DS-DIGIT.TTF in Resources */,
+				6634DFFA1B9A2DB6004306FA /* DS-DIGII.TTF in Resources */,
+				6634DFF81B9A2BA5004306FA /* DS-DIGIB.TTF in Resources */,
+				66B51CB71B9ABC68005D9A65 /* Images.xcassets in Resources */,
+				6634DFF91B9A2BA5004306FA /* DS-DIGI.TTF in Resources */,
+				66838EAA1B826F3000DF1A4E /* B3.mp3 in Resources */,
+				66838EAD1B826F3000DF1A4E /* E4.mp3 in Resources */,
+				66838EAE1B826F3000DF1A4E /* E2.mp3 in Resources */,
+				66838EA91B826F3000DF1A4E /* A2.mp3 in Resources */,
+				66838EAB1B826F3000DF1A4E /* D3.mp3 in Resources */,
+				66838EAC1B826F3000DF1A4E /* G3.mp3 in Resources */,
+				66AA25181B7FDB8200E76FD9 /* LaunchScreen.xib in Resources */,
+				66AA25131B7FDB8200E76FD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66AA251B1B7FDB8200E76FD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66AA25001B7FDB8200E76FD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C3E7471B99420600E662E5 /* TPCircularBuffer.c in Sources */,
+				66C3E73B1B99420600E662E5 /* EZAudioFFT.m in Sources */,
+				66C3E7421B99420600E662E5 /* EZAudioUtilities.m in Sources */,
+				66C3E7431B99420600E662E5 /* EZMicrophone.m in Sources */,
+				66C3E7461B99420600E662E5 /* EZRecorder.m in Sources */,
+				66C3E73E1B99420600E662E5 /* EZAudioFloatData.m in Sources */,
+				66C3E73D1B99420600E662E5 /* EZAudioFloatConverter.m in Sources */,
+				66C3E7451B99420600E662E5 /* EZPlot.m in Sources */,
+				66C3E7441B99420600E662E5 /* EZOutput.m in Sources */,
+				66C3E7401B99420600E662E5 /* EZAudioPlot.m in Sources */,
+				66C3E7381B99420600E662E5 /* EZAudio.m in Sources */,
+				66C3E73A1B99420600E662E5 /* EZAudioDisplayLink.m in Sources */,
+				66C3E7111B966E4900E662E5 /* TECViewController.m in Sources */,
+				66C3E73C1B99420600E662E5 /* EZAudioFile.m in Sources */,
+				66ADBEEF1B937A6D00B4CE66 /* TECStringButton.m in Sources */,
+				66C3E73F1B99420600E662E5 /* EZAudioPlayer.m in Sources */,
+				66C3E7391B99420600E662E5 /* EZAudioDevice.m in Sources */,
+				66F8B9091B8B73360040CC1B /* TECTuningManager.m in Sources */,
+				66AA250D1B7FDB8200E76FD9 /* AppDelegate.m in Sources */,
+				66C3E7411B99420600E662E5 /* EZAudioPlotGL.m in Sources */,
+				66AA252F1B7FE18B00E76FD9 /* TECGuitarTuner.m in Sources */,
+				66AA250A1B7FDB8200E76FD9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66AA25191B7FDB8200E76FD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66AA25241B7FDB8200E76FD9 /* GuitarTunerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66AA251F1B7FDB8200E76FD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66AA25031B7FDB8200E76FD9 /* GuitarTuner */;
+			targetProxy = 66AA251E1B7FDB8200E76FD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66AA25111B7FDB8200E76FD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66AA25121B7FDB8200E76FD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66AA25161B7FDB8200E76FD9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66AA25171B7FDB8200E76FD9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66AA25251B7FDB8200E76FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66AA25261B7FDB8200E76FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66AA25281B7FDB8200E76FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GuitarTuner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		66AA25291B7FDB8200E76FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GuitarTuner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		66AA252B1B7FDB8200E76FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GuitarTunerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarTuner.app/GuitarTuner";
+			};
+			name = Debug;
+		};
+		66AA252C1B7FDB8200E76FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GuitarTunerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarTuner.app/GuitarTuner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66AA24FF1B7FDB8200E76FD9 /* Build configuration list for PBXProject "GuitarTuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66AA25251B7FDB8200E76FD9 /* Debug */,
+				66AA25261B7FDB8200E76FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66AA25271B7FDB8200E76FD9 /* Build configuration list for PBXNativeTarget "GuitarTuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66AA25281B7FDB8200E76FD9 /* Debug */,
+				66AA25291B7FDB8200E76FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66AA252A1B7FDB8200E76FD9 /* Build configuration list for PBXNativeTarget "GuitarTunerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66AA252B1B7FDB8200E76FD9 /* Debug */,
+				66AA252C1B7FDB8200E76FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66AA24FC1B7FDB8200E76FD9 /* Project object */;
+}

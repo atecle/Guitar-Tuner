@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DS-DIGI.TTF">
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Guitar Tuner-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="TECViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wp-rN-n9S">
+                                <rect key="frame" x="0.0" y="440" width="320" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ep-iB-aK2" customClass="TECStringButton">
+                                        <rect key="frame" x="112" y="42" width="44" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4Ep-iB-aK2" secondAttribute="height" multiplier="44:43" id="myH-sH-tjb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="20"/>
+                                        <state key="normal" title="D">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="noteButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pjv-ba-Jfv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOH-cj-TpR" customClass="TECStringButton">
+                                        <rect key="frame" x="164" y="42" width="44" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nOH-cj-TpR" secondAttribute="height" multiplier="44:43" id="91t-gM-JiN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="G">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="noteButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nwu-rf-Bui"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfX-6F-v7y" customClass="TECStringButton">
+                                        <rect key="frame" x="268" y="42" width="44" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LfX-6F-v7y" secondAttribute="height" multiplier="44:43" id="7Ji-R2-1MR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="20"/>
+                                        <state key="normal" title="E">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="noteButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bRA-DV-ozr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7T-lJ-zoz" customClass="TECStringButton">
+                                        <rect key="frame" x="8" y="42" width="44" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="N7T-lJ-zoz" secondAttribute="height" multiplier="44:43" id="cBq-gZ-dVf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="20"/>
+                                        <state key="normal" title="E">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="noteButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="liH-S4-RJg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnE-uQ-SFs" customClass="TECStringButton">
+                                        <rect key="frame" x="216" y="42" width="44" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="SnE-uQ-SFs" secondAttribute="height" multiplier="44:43" id="mnU-if-2uO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="20"/>
+                                        <state key="normal" title="B">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="noteButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="crS-LZ-3AE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STN-9w-m5I" customClass="TECStringButton">
+                                        <rect key="frame" x="60" y="42" width="44" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="STN-9w-m5I" secondAttribute="height" multiplier="44:43" id="eDU-a0-qLu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="20"/>
+                                        <state key="normal" title="A">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="noteButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IOQ-bk-nQk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FT2-mJ-XiI">
+                                <rect key="frame" x="-8" y="435" width="328" height="5"/>
+                                <color key="backgroundColor" red="1" green="0.12156862745098039" blue="0.27843137254901962" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzW-LP-Zoy">
+                                <rect key="frame" x="87" y="227" width="161" height="114"/>
+                                <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="98"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.77555479634287916" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9wp-rN-n9S" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="3oo-yB-0xl"/>
+                            <constraint firstItem="9wp-rN-n9S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="RH9-zk-bCX"/>
+                            <constraint firstItem="9wp-rN-n9S" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="420" id="UGN-OC-KTE"/>
+                            <constraint firstAttribute="trailing" secondItem="9wp-rN-n9S" secondAttribute="trailing" id="Uif-ZX-t4L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Guitar Tuner" id="Qhy-We-wmI">
+                        <barButtonItem key="leftBarButtonItem" title="Options" id="Odx-cx-mf2"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="noteLabel" destination="KzW-LP-Zoy" id="TNY-eV-j3R"/>
+                        <outletCollection property="guitarStrings" destination="4Ep-iB-aK2" id="t4Q-ao-1Mt"/>
+                        <outletCollection property="guitarStrings" destination="nOH-cj-TpR" id="GF8-WQ-fAN"/>
+                        <outletCollection property="guitarStrings" destination="LfX-6F-v7y" id="3I4-6x-suL"/>
+                        <outletCollection property="guitarStrings" destination="N7T-lJ-zoz" id="qFn-bc-PVt"/>
+                        <outletCollection property="guitarStrings" destination="SnE-uQ-SFs" id="feU-Ep-YX0"/>
+                        <outletCollection property="guitarStrings" destination="STN-9w-m5I" id="P1x-WO-qjb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="356" y="-52"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
